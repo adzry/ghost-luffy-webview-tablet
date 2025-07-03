@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ghost Luffy Webview</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#00FFD4"/>
+  <link rel="icon" href="icon-192.png" />
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    .btn {
+      background: #00FFD4;
+      padding: 1rem 2rem;
+      border: none;
+      color: black;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔥 Ghost Luffy Webview</h1>
+  <p>Install this as an app or download the APK below.</p>
+  <a class="btn" href="https://github.com/adzry/ghost-luffy-webview-tablet/releases/latest/download/app-debug.apk">Download APK</a>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').then(() => {
+        console.log('✅ Service worker registered');
+      });
+    }
+  </script>
+</body>
+</html>
