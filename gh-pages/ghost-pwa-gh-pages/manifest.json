@@ -1,0 +1,14 @@
+{
+  "name": "Ghost WebView Tablet",
+  "short_name": "GhostTablet",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "description": "Download Ghost Tablet APK directly",
+  "icons": [{
+    "src": "icon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }]
+}
